@@ -106,13 +106,13 @@
                 </ItemsControl>
             </ScrollViewer>
             <Label Content="Choose category" HorizontalAlignment="Center" Margin="0,44,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontWeight="Bold" Height="27"/>
+            <Rectangle x:Name="DragRegion" Fill="Transparent" 
+           VerticalAlignment="Top" Height="74" MouseLeftButtonDown="DragRegion_MouseLeftButtonDown" Margin="0,-8,10,0"/>
             <Button x:Name="btn_CloseButton" Content="X" HorizontalAlignment="Left" Margin="275,13,0,0" VerticalAlignment="Top" Height="20" Width="20" Foreground="Red" FontWeight="Bold" BorderBrush="{x:Null}" Click="btn_CloseButton_Click_1">
                 <Button.Background>
                     <ImageBrush ImageSource="/RoundButton_UI.png"/>
                 </Button.Background>
             </Button>
-            <Rectangle x:Name="DragRegion" Fill="Transparent" 
-           VerticalAlignment="Top" Height="47" MouseLeftButtonDown="DragRegion_MouseLeftButtonDown" Margin="0,0,72,0"/>
             <Button x:Name="btn_Minimize" Content="" HorizontalAlignment="Left" Margin="242,20,0,0" VerticalAlignment="Top" Width="26" Height="8" BorderBrush="{x:Null}" Click="btn_Minimize_Click">
                 <Button.Background>
                     <ImageBrush ImageSource="/OvalButtonLG_UI.png"/>
