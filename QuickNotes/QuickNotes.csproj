@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+    <ApplicationIcon>QuickNotesIcon.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="kennyeravex_httpss.mj.runf_VCIe0E0eM_neon_beach_desktop_8k_ultr_d6f23e57-00bc-452a-968d-5880943dc698.png" />
+    <None Remove="neon_beach_desktop_8k_ultr.png" />
+    <None Remove="OvalButtonLG_UI.png" />
+    <None Remove="OvalButton_UI.png" />
+    <None Remove="RoundButton_UI.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="QuickNotesIcon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="kennyeravex_httpss.mj.runf_VCIe0E0eM_neon_beach_desktop_8k_ultr_d6f23e57-00bc-452a-968d-5880943dc698.png" />
+    <Resource Include="neon_beach_desktop_8k_ultr.png" />
+    <Resource Include="OvalButtonLG_UI.png" />
+    <Resource Include="OvalButton_UI.png" />
+    <Resource Include="RoundButton_UI.png" />
+  </ItemGroup>
+
+</Project>
