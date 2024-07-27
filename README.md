@@ -11,7 +11,7 @@ QuickNotes is a sleek, modern note-taking application designed to help you manag
 
 ## Screenshots
 
-![QuickNotes Screenshot](path/to/screenshot.png)
+![QuickNotes Screenshot]([path/to/screenshot.png](https://github.com/kl3mta3/QuickNotes/blob/1e9212c52d63621db55ceb1326ca1fa42225ab2b/QuickNotes/images/QUickNotesUImain.png))
 
 ## Installation
 
