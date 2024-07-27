@@ -56,12 +56,20 @@
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button x:Name="btn_Add" Content="Add" Margin="248,399,23,13" BorderThickness="1,0,1,1" FontWeight="Bold" Background="White" Click="btn_Add_Click">
+            <Button x:Name="btn_Add" Content="Add Note" Margin="227,399,17,13" BorderThickness="1,0,1,1" FontWeight="Bold" Background="White" Click="btn_Add_Click" RenderTransformOrigin="0.5,0.5">
                 <Button.Resources>
                     <Style TargetType="{x:Type Border}">
                         <Setter Property="CornerRadius" Value="5"/>
                     </Style>
                 </Button.Resources>
+                <Button.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform AngleY="-0.597"/>
+                        <RotateTransform/>
+                        <TranslateTransform Y="-0.323"/>
+                    </TransformGroup>
+                </Button.RenderTransform>
             </Button>
             <Label Content="QuickNotes" HorizontalAlignment="Left" Margin="88,2,0,0" VerticalAlignment="Top" Background="{x:Null}" Foreground="White" FontSize="22" FontWeight="Bold"/>
             <Label Content="Click to copy to clipboard" Margin="70,128,88,274" Background="{x:Null}" Foreground="White" FontWeight="Bold"/>
