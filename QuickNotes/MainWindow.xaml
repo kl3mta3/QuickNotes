@@ -110,6 +110,18 @@
                     <ImageBrush ImageSource="/OvalButtonLG_UI.png"/>
                 </Button.Background>
             </Button>
+
+            <Label x:Name="lbl_totals_Title_Copy2" Content="QuickNotes is a Maple Product" HorizontalAlignment="Left" Margin="84,401,0,0" VerticalAlignment="Top" HorizontalContentAlignment="Center" Width="128" FontWeight="Bold" Background="{x:Null}" Foreground="White" FontSize="7" Height="18" RenderTransformOrigin="0.5,0.5">
+                <Label.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform ScaleY="1"/>
+                        <SkewTransform/>
+                        <RotateTransform/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Label.RenderTransform>
+            </Label>
+
         </Grid>
     </Border>
 </Window>
