@@ -35,14 +35,14 @@
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button x:Name="btn_FollowUp" Content="Follow up" Margin="158,96,85,0" VerticalAlignment="Top" FontWeight="Bold" Click="btn_FollowUp_Click">
+            <Button x:Name="btn_FollowUp" Content="Follow up" Margin="125,96,118,0" VerticalAlignment="Top" FontWeight="Bold" Click="btn_FollowUp_Click">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="5"/>
                     </Style>
                 </Button.Resources>
             </Button>
-            <Button x:Name="btn_Escalation" Content="Escalation" Margin="84,96,159,0" VerticalAlignment="Top" FontWeight="Bold" Click="btn_Escalation_Click">
+            <Button x:Name="btn_Escalation" Content="Escalation" Margin="56,96,187,0" VerticalAlignment="Top" FontWeight="Bold" Click="btn_Escalation_Click">
                 <Button.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="5"/>
@@ -129,6 +129,13 @@
                     </TransformGroup>
                 </Label.RenderTransform>
             </Label>
+            <Button x:Name="btn_Custom" Content="Custom" Margin="194,96,49,0" VerticalAlignment="Top" FontWeight="Bold" Click="btn_Custom_Click">
+                <Button.Resources>
+                    <Style TargetType="{x:Type Border}">
+                        <Setter Property="CornerRadius" Value="5"/>
+                    </Style>
+                </Button.Resources>
+            </Button>
 
         </Grid>
     </Border>

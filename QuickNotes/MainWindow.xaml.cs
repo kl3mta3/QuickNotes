@@ -26,6 +26,7 @@ namespace QuickNotes
         public ObservableCollection<string> FollowUpNotes { get; set; }
         public ObservableCollection<string> EmailNotes { get; set; }
         public ObservableCollection<string> OfflineNotes { get; set; }
+        public ObservableCollection<string> CustomNotes { get; set; }
         private Button _activeButton;
         private readonly string JsonFilePath;
         private ObservableCollection<string> _currentCollection;
@@ -87,6 +88,12 @@ namespace QuickNotes
         {
             SetActiveButton(btn_Offline);
             DisplayNotes(OfflineNotes);
+        }
+
+        private void btn_Custom_Click(object sender, RoutedEventArgs e)
+        {
+            SetActiveButton(btn_Custom);
+            DisplayNotes(CustomNotes);
         }
 
         private void btn_FollowUp_Click(object sender, RoutedEventArgs e)
@@ -189,6 +196,15 @@ namespace QuickNotes
                 FollowUpNotes = new ObservableCollection<string>(notes.FollowUpNotes);
                 EmailNotes = new ObservableCollection<string>(notes.EmailNotes);
                 OfflineNotes = new ObservableCollection<string>(notes.OfflineNotes);
+                try
+                    {
+                    CustomNotes = new ObservableCollection<string>(notes.CustomNotes);
+                }
+                catch
+                {
+                    CustomNotes = new ObservableCollection<string>();
+                }
+           
             }
             else
             {
@@ -198,6 +214,7 @@ namespace QuickNotes
                 FollowUpNotes = new ObservableCollection<string>();
                 EmailNotes = new ObservableCollection<string>();
                 OfflineNotes = new ObservableCollection<string>();
+                CustomNotes = new ObservableCollection<string>();
             }
         }
 
@@ -210,7 +227,8 @@ namespace QuickNotes
                 EscalationNotes = EscalationNotes.ToArray(),
                 FollowUpNotes = FollowUpNotes.ToArray(),
                 EmailNotes = EmailNotes.ToArray(),
-                OfflineNotes = OfflineNotes.ToArray()
+                OfflineNotes = OfflineNotes.ToArray(),
+                CustomNotes = CustomNotes.ToArray()
             };
 
             string jsonString = JsonSerializer.Serialize(notes, new JsonSerializerOptions { WriteIndented = true });
@@ -239,6 +257,7 @@ namespace QuickNotes
         public string[] FollowUpNotes { get; set; }
         public string[] EmailNotes { get; set; }
         public string[] OfflineNotes { get; set; }
+        public string[] CustomNotes { get; set; }
     }
 
 }
