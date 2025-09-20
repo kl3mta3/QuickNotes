@@ -46,7 +46,7 @@ namespace QuickNotes
             FollowUpNotes = new ObservableCollection<string> { "Worked with customer to continue support to resolution." };
             EmailNotes = new ObservableCollection<string> { "Reached out to customer to continue support.", "Followed up with customer regarding " };
             OfflineNotes = new ObservableCollection<string> { "Reviewed client's request for support.", "Supported customer by developing plan to reach resolution.\r\n" };
-
+            LoadNotes();
             SetActiveButton(btn_Inbound);
             DisplayNotes(InboundNotes);
 
